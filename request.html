@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Lab #5: Regular expression</title>
+        <meta charset="windows-1251">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-size: 18px;
+                font-family: "Georgia";
+            }
+            input{
+                margin-top: 5px;
+            }
+            textarea{
+                margin-top: 5px;
+                width: 50%;
+                height: 50px;
+                border: 1px solid purple;
+            }
+            input[type=text]{
+                border: 1px solid purple;
+                width: 50%;
+                height: 30px;
+            }
+            input[type=submit]{
+                border: 3px solid #C2E9E9;
+                background-color: #E8FBFB;
+            }
+            .message{
+                color: green;
+            }
+            .error{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main_wrapper">
+            <form action="request.php" method="POST">
+                <label>Enter text: </label>
+                <input type="text" name="quick" value=""/><span class="message"></span><br/>
+                <label>Enter email: </label>
+                <input type="text" name="email" value=""/><span class="message"></span><br>
+                <label>Enter number: </label>
+                <input type="text" name="number" value=""/><span class="message"></span><br>
+                <label>Enter text: </label>
+                <input type="text" name="whitespace" value=""/><span class="message"></span><br>
+                <label>Enter text: </label>
+                <input type="text" name="nonnumeric" value=""/><span class="message"></span><br>
+                <label>Enter text: </label>
+                <textarea class="newlines"></textarea><span class="message"></span><br>
+                <label>Enter text: </label>
+                <input type="text" name="brackets" value=""/><span class="message"></span><br>
+                <input type="submit" value="Send"/><br/>
+
+            </form>
+        </div>
+    </body>
+</html>
